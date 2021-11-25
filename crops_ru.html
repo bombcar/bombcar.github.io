@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<title>Калькулятор селекционера Gregtech 5 exp и Industrial Craft 2 experimental (Minecraft 1.7.10)</title>
+<link href="crops_files/normalize.css" rel="stylesheet" type="text/css">
+<link href="crops_files/ModderBlack.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<header><h1>Калькулятор селекционера 1.6.1 [<a href="index.html">Show in English</a>]</h1></header>
+<article>
+	
+	<section>
+		<p>Gregtech 5.09.29, Industrial Craft 2 experimental 2.2.820, количество культур: <span id="total_crops"></span></p>
+	</section>
+
+	<section id="input">
+		<h2 title="Определение, из чего выводится выбранное растение">Вычисление шансов получить целевое растение</h2>
+		<div>
+			<label for="target" title="Выберите цель">Что хотим получить
+				<select name="target" id="target">
+					<option value="1">Включите выполнение javascript</option>
+				</select>
+			</label>
+			<span>(число справа от названия показывает тир растения)</span>
+		</div>
+		<label for="parent_tier">Макс. тир для родителей
+			<select name="parent_tier" id="parent_tier">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+		</label>
+		<label for="check_tier" title="Поставьте галку, если хотите, чтобы в таблице отобразились только те, родители, которые отвечают условию. При снятой галке будут показаны все варианты."><input name="check_tier" value="true" id="check_tier" type="checkbox" style="margin-right: 5px;">учитывать</label>
+	</section>
+
+	<section id="result">
+		<p>Найдено возможных родителей: <span id="prob_count"></span><span id="test"></span></p>
+		<table>
+			<thead>
+				<tr><th>Культура</th><th>Вероятность</th><th>Tier</th><th>Мод</th><th>Атрибуты</th></tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+	
+	<section id="calculateRatioFor">
+		<h2 title="Какие культуры сможем получить, если скрестим выбранные растения из предложенных списков родителей">Вычисление мутаций из выбранных растений</h2>
+		<div>
+			<label for="target_1">Родитель 1<select name="target1" id="target_1"><option value="0">Включите выполнение javascript</option></select></label>
+			<label for="target_2">Родитель 2<select name="target2" id="target_2"><option value="0">Включите выполнение javascript</option></select></label>
+		</div>
+		<div>
+			<label for="target_3">Родитель 3<select name="target3" id="target_3"><option value="0">Включите выполнение javascript</option></select></label>
+			<label for="target_4">Родитель 4<select name="target4" id="target_4"><option value="0">Включите выполнение javascript</option></select></label>
+		</div>
+		<p id="info_text"></p>
+		<table>
+			<thead></thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+	<script src="crops_files/jquery-3.0.0.min.js"></script>
+	<script src="crops_files/ic2cropcalculator.js"></script>
+</article>
+
+<footer>
+<div style="float:right">
+<div class="thx">v1.5 - добавлена поддержка Opera 38 и Internet Explorer 11</div>
+<div class="thx">v1.6 - добавлена поддержка новых культур, введённых модом Gregtech 18.10.2016</div>
+<div class="thx">v1.6.1 - добавлена поддержка культуры Rape, введённой модом Gregtech</div>
+<div class="thx">&nbsp;</div>
+</div>
+<div>2017, Специально для ИИС (<a target="_blank" href="https://vk.com/ideal_industrial" title="Группа в ВК - vk.com/ideal_industrial">Идеальная Индустриальная Сборка</a>)</div>
+<div class="thx">Автор ИИС - <a target="_blank" href="https://www.youtube.com/user/akaSapient/">Sapient</a></div>
+</footer>
+</body>
+</html>

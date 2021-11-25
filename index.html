@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<title>IC2 Crop breeding calculator for GTNH</title>
+<link href="crops_files/normalize.css" rel="stylesheet" type="text/css">
+<link href="crops_files/ModderBlack.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<header><h1>Breeding calculator 1.7.0 [<a href="crops_ru.html">Показать на русском</a>]</h1></header>
+<article>
+	
+	<section>
+		<p>GTNH version 2.0.7.5, Number of crops: <span id="total_crops"></span></p>
+	</section>
+
+	<section id="input">
+		<h2 title="Определение, из чего выводится выбранное растение">Chance to get target crop</h2>
+		<div>
+			<label for="target" title="Select target">What we want to obtain
+				<select name="target" id="target">
+					<option value="1">Enable javascript</option>
+				</select>
+			</label>
+			<span>(the number to the right is the crop tier)</span>
+		</div>
+		<label for="parent_tier">Max parents tier 
+			<select name="parent_tier" id="parent_tier">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+		</label>
+		<label for="check_tier" title="Select checkmark if you want to use the tier limit. Otherwise all the results will be shown."><input name="check_tier" value="true" id="check_tier" type="checkbox" style="margin-right: 5px;">Apply</label>
+	</section>
+
+	<section id="result">
+		<p>Possible parents: <span id="prob_count"></span><span id="test"></span></p>
+		<table>
+			<thead>
+				<tr><th>Crop</th><th>Probability</th><th>Tier</th><th>Mod</th><th>Attributes</th></tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</section>
+	
+	<section id="calculateRatioFor">
+		<h2 title="What crops can you get from these parents">Calculate selected crops mutations</h2>
+		<div>
+			<label for="target_1">Parent 1<select name="target1" id="target_1"><option value="0">Enable javascript</option></select></label>
+			<label for="target_2">Parent 2<select name="target2" id="target_2"><option value="0">Enable javascript</option></select></label>
+		</div>
+		<div>
+			<label for="target_3">Parent 3<select name="target3" id="target_3"><option value="0">Enable javascript</option></select></label>
+			<label for="target_4">Parent 4<select name="target4" id="target_4"><option value="0">Enable javascript</option></select></label>
+		</div>
+		<p id="info_text"></p>
+		<table>
+			<thead></thead>
+			<tbody></tbody>
+		</table>
+	</section>
+
+	<script src="crops_files/jquery-3.0.0.min.js"></script>
+	<script src="crops_files/ic2cropcalculator.js"></script>
+</article>
+
+<footer>
+<div style="float:right">
+<div class="thx">v1.5 - добавлена поддержка Opera 38 и Internet Explorer 11</div>
+<div class="thx">v1.6 - добавлена поддержка новых культур, введённых модом Gregtech 18.10.2016</div>
+<div class="thx">v1.6.1 - добавлена поддержка культуры Rape, введённой модом Gregtech</div>
+<div class="thx">v1.7.0 - Ported to GTNH 2.0.7.5.</div>
+<div class="thx">&nbsp;</div>
+</div>
+<div>2017, Специально для ИИС (<a target="_blank" href="https://vk.com/ideal_industrial" title="Группа в ВК - vk.com/ideal_industrial">Идеальная Индустриальная Сборка</a>)</div>
+<div class="thx">Автор ИИС - <a target="_blank" href="https://www.youtube.com/user/akaSapient/">Sapient</a></div>
+</footer>
+</body>
+</html>
