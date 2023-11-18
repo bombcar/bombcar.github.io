@@ -163,7 +163,8 @@ var C_DATA = [
 {"id":175,"name":"Onion","rus":"","tier":4,"stats":{"che":1,"foo":1,"def":0,"col":2,"wee":0},"attributes":"Food Brown","mod":""},
 {"id":176,"name":"Cucumber","rus":"","tier":4,"stats":{"che":1,"foo":1,"def":0,"col":2,"wee":0},"attributes":"Food Green","mod":""},
 {"id":177,"name":"Tea","rus":"","tier":4,"stats":{"che":1,"foo":1,"def":0,"col":2,"wee":0},"attributes":"Food Green Ingredient","mod":""},
-{"id":178,"name":"Rape","rus":"","tier":4,"stats":{"che":1,"foo":1,"def":0,"col":2,"wee":0},"attributes":"Food Yellow Oil","mod":""}
+{"id":178,"name":"Rape","rus":"","tier":4,"stats":{"che":1,"foo":1,"def":0,"col":2,"wee":0},"attributes":"Food Yellow Oil","mod":""},
+{"id":179,"name":"Salty Root","rus":"","tier":4,"stats":{"che":0,"foo":0,"def":0,"col":0,"wee":0},"attributes":"Salt Gray Root Hydrophobic","mod":""}
 ];
 var crops = new Array(C_DATA.length);
 
